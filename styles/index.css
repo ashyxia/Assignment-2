@@ -6,21 +6,46 @@
 header {
   margin: 0 135px;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .nav-title {
   color: #131318;
-  display: inline-block;
   font-size: 2.25rem;
-
   font-weight: 800;
+  display: flex;
+  align-items: center;
 }
+
 .nav-title img {
-  vertical-align: middle;
+  margin-right: 10px; 
 }
-.color-travel {
+
+.color-text {
   color: #ff5400;
   font-size: 2.25rem;
   font-weight: 800;
 }
+
+li {
+  display: inline-block;
+  margin-right: 20px; 
+}
+
+a {
+  text-decoration: none;
+  color: #131318;
+  font-weight: 600;
+}
+
+.color-home {
+  color: #ff5400;
+}
+
 .banner {
   background-image: linear-gradient(
       to bottom,
@@ -29,8 +54,8 @@ header {
     ),
     url("../resources/Images/Group\ 13\ \(1\)\ \(1\).png");
   background-repeat: no-repeat;
-  width: 1170px;
-  height: 500px;
+  max-width: 1170px;
+  max-height: 500px;
   border-radius: 16px;
 }
 nav {
@@ -106,6 +131,7 @@ nav li a {
   margin: 25px;
   padding: 50px;
 }
+/* Tour Styles */
 .tour {
   display: flex;
   padding-top: 100px;
@@ -127,5 +153,60 @@ nav li a {
 .section-img{
   border-radius: 16px;
 background:linear-gradient(lightgray 50% / cover no-repeat) ;
-height: 550px;
+max-height: 500px;
+}
+/* Destination Styles */
+.hero-section{
+  text-align: center;
+  padding-top: 100px;
+}
+.section-info{
+ text-align: center;
+}
+.section-info{
+  color: rgba(19, 19, 24, 0.70);
+  text-align: center;
+font-weight: 400;
+padding: 0 264px;
+padding-bottom: 48px;
+}
+.destination-img-1{
+  display: flex;
+  gap: 25px;
+  width: 573px;
+height: 300px;
+margin-top: 24px;
+}
+.destination-img-2{
+  display: flex;
+  gap: 25px;
+  margin-top: 24px;
+}
+.destination-img-3{
+  display: flex;
+  gap: 25px;
+  margin-top: 24px;
+}
+/* responsive media queries  */
+
+@media screen and (max-width: 600px){
+  
+  header{
+      padding: 5px;
+      margin: 0;
+  }
+  nav{
+    flex-direction: column;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+  .banner{
+    padding: 5px;
+    width: auto;
+  }
+  .banner-content{
+    max-width: 800px;
+  }
+  
 }
