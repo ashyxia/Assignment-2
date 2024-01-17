@@ -11,12 +11,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap :400px;
 }
 
 .nav-title {
   color: #131318;
   font-size: 2.25rem;
   font-weight: 800;
+  gap :10px;
   display: flex;
   align-items: center;
 }
@@ -54,8 +56,8 @@ a {
     ),
     url("../resources/Images/Group\ 13\ \(1\)\ \(1\).png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  max-width: 1250px;
+  
+  max-width: 1170px;
   height: 500px;
   border-radius: 16px;
 }
@@ -151,7 +153,7 @@ background: #FFF;
 .section-title {
   color: #131318;
   font-family: Mulish;
-  font-size: 40px;
+  font-size: 3.124rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -186,7 +188,7 @@ padding-bottom: 48px;
   gap: 25px;
   width: 573px;
 height: 300px;
-margin-top: 24px;
+margin-top: 1.8rem;
 margin-left: 20px;
 }
 .destination-img-2{
@@ -336,7 +338,9 @@ font-weight: 800;
 /* responsive media queries  */
 
 @media screen and (max-width: 600px){
-  
+  nav{
+    gap: 10px;
+  }
   header{
       padding: 5px;
       margin: 0;
@@ -349,21 +353,37 @@ font-weight: 800;
   }
   .banner{
     padding: 5px;
-    width: auto;
+    width: 100%;
   }
-  .banner-content{
-    max-width: 800px;
+  .banner-title{
+    padding: 0px;
+    font-size: 1rem;
+  }
+  .banner-options{
+    padding: 30px;
+    flex-direction: column
+  }
+.banner-description {
+  padding: 10px;
+}
+  .tour{
+    padding: 10px;
+    flex-direction: column;
+  }
+  .section-img img{
+    padding-top: 10px;
+    width: 100%;
   }
   .destination-img-1, .destination-img-2, .destination-img-3{
     
     margin: 0;
     flex-direction: column;
   }
-  .destination-img-1 img, .destination-img-2 img, .destination-img-3img{
-    width: 335px;
-    height: 176px;
-    padding: 20px;
-  } 
+  .destination-img-1 img, .destination-img-2 img, .destination-img-3 img{
+    gap: 10px;
+    width: 100%;
+  }
+  
 /* container */
   .container-of-2{
     padding: 10px;
@@ -381,6 +401,9 @@ font-weight: 800;
   .newsletter-form button, input{
     max-width: 320px;
     padding: 10px;
+  }
+  .newsletter-img img{
+    width: 100%;
   }
   .newsletter-box{
     padding: 10px;
